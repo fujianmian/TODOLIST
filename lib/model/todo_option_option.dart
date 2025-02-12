@@ -1,0 +1,4 @@
+enum TodoOptionOption {
+  MarkAsCompleted,
+  ClearCompleted,
+}
