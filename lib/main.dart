@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todolist_testing/screen/editTodo_screen.dart';
 import 'package:todolist_testing/screen/stats_screen.dart';
 import 'package:todolist_testing/screen/todos_screen.dart';
 
@@ -77,7 +78,9 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Add your onPressed code here!
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return EdittodoScreen();
+          }));
         },
         shape: CircleBorder(),
         tooltip: 'Increment',
